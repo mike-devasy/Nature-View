@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The pink sunset</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <style>
+    .rounded-img {
+      width: 60%;
+      border-radius: 50%;
+      box-shadow: 0 0 50px rgba(111, 12, 114, 0.8);
+      padding: 0.8em;
+      margin-bottom: 1em;
+    }
+    .hover {
+      --s: 0.1em; /* the thickness of the line */
+      --c: #bd4dc8; /* the color */
+
+      color: #0000;
+      padding-bottom: var(--s);
+      background: linear-gradient(90deg, var(--c) 50%, #000 0)
+          calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+      -webkit-background-clip: text, padding-box;
+      background-clip: text, padding-box;
+      transition: 0.5s;
+    }
+    .hover:hover {
+      --_p: 100%;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/sveta.html">
+          <img src="VSB.png" alt="VSB" width="60%" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/sveta.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our places.html">Our places</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <img class="rounded-img" src="Sunset.jpg" alt="Sun" />
+          <h1 class="hover">The pink sunset</h1>
+          <h2 class="lead text-muted">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+            optio?
+          </h2>
+          <a
+            href="https://www.pinterest.ru"
+            class="btn btn-primary"
+            target="_blank"
+          >
+            pinterest
+          </a>
+          <a
+            href="https://pixabay.com/ru"
+            class="btn btn-secondary"
+            target="_blank"
+          >
+            Wild Nature
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
